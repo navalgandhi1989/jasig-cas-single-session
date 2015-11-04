@@ -23,17 +23,17 @@ Below are configuration changes which has to be done in project :-
     
 2. /src/main/webapp/WEB-INF/spring-configuration/ticketRegistry.xml
 
-    <!--Comment the default ticket regitry. -->
-    <!-- <bean id="ticketRegistry" class="org.jasig.cas.ticket.registry.DefaultTicketRegistry" />  -->
+		<!--Comment the default ticket regitry. -->
+		<!-- <bean id="ticketRegistry" class="org.jasig.cas.ticket.registry.DefaultTicketRegistry" />  -->
     
-    <!--Add the custom ticket regitry. -->
-    <bean id="ticketRegistry" class="com.naval.cas.SingleSesionTicketRegistry"  
+		<!--Add the custom ticket regitry. -->
+		<bean id="ticketRegistry" class="com.naval.cas.SingleSesionTicketRegistry"  
   		p:isSingleSesionPerUser="${is.single.sesion.per.user}"
   		p:logoutManager-ref="logoutManager"/>
     
 3. /src/main/webapp/WEB-INF/deployerConfigContext.xml
-    <!--Add the Following code block -->
-    <bean id="passwordEncoder"
+		<!--Add the Following code block -->
+		<bean id="passwordEncoder"
 		      class="org.jasig.cas.authentication.handler.DefaultPasswordEncoder"
 		      c:encodingAlgorithm="MD5"
 		      p:characterEncoding="UTF-8" />
