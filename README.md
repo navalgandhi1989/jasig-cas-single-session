@@ -32,6 +32,7 @@ Below are configuration changes which has to be done in project :-
   		p:logoutManager-ref="logoutManager"/>
     
 3. /src/main/webapp/WEB-INF/deployerConfigContext.xml
+	
 		<!--Add the Following code block -->
 		<bean id="passwordEncoder"
 		      class="org.jasig.cas.authentication.handler.DefaultPasswordEncoder"
