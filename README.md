@@ -14,7 +14,7 @@ In Order to achieve the functionality, some additional functionalities were adde
 Below are configuration changes which has to be done in project :-
 1. src/main/resources/application.properties
 	
-	#Toggle the feature if Single Session.
+		#Toggle the feature if Single Session.
     	is.single.sesion.per.user=true
 
     	#MySQL query to check the authentication.
