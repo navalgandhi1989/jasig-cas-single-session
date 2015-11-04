@@ -13,11 +13,12 @@ In Order to achieve the functionality, some additional functionalities were adde
 
 Below are configuration changes which has to be done in project :-
 1. src/main/resources/application.properties
-    #Toggle the feature if Single Session.
-    is.single.sesion.per.user=true
+	
+	#Toggle the feature if Single Session.
+    	is.single.sesion.per.user=true
 
-    #MySQL query to check the authentication.
-    user.authentication.sql=select password from user where email=? and is_active=1  
+    	#MySQL query to check the authentication.
+    	user.authentication.sql=select password from user where email=? and is_active=1  
     
     
 2. /src/main/webapp/WEB-INF/spring-configuration/ticketRegistry.xml
